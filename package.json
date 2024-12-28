@@ -1,0 +1,27 @@
+{
+  "name": "smart-url-shortener",
+  "version": "1.0.0",
+  "description": "A scalable Node.js API for shortening URLs with Google Sign-In, Redis caching, and advanced analytics (click trends, OS, and devices). Supports topic-based grouping, rate limiting, and is fully Dockerized for cloud deployment with Swagger documentation and tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "geoip-lite": "^1.4.10",
+    "mongoose": "^8.9.2",
+    "nanoid": "^3.3.8",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "rate-limiter-flexible": "^5.0.4",
+    "redis": "^4.7.0",
+    "supertest": "^7.0.0"
+  }
+}
