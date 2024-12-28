@@ -1,5 +1,4 @@
 const { UrlModel } = require('../models/Url');
-const geoip = require('geoip-lite'); 
 const redisClient  = require('../utils/redisClient')
 
 exports.redirectShortUrl = async (req, res) => {
@@ -22,7 +21,7 @@ exports.redirectShortUrl = async (req, res) => {
     const analyticsData = {
       userAgent: req.headers['user-agent'],
       ipAddress: req.ip,
-      geolocation: geoip.lookup(req.ip) || 'TBD',  
+      geolocation: 'TBD',  
     };
 
     url.analytics.push(analyticsData);
